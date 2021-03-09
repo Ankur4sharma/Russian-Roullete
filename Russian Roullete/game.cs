@@ -42,8 +42,10 @@ namespace Russian_Roullete
         private void buttonspin_Click(object sender, EventArgs e)
         {
             gungame.lodedgunspin = random.Next(1, 6);
-           buttonshhot .Enabled = true;
-            buttonspin .Enabled = false;
+            buttonshhot.Enabled = true;
+            Shootawaybt.Enabled = true;
+            buttonspin.Enabled = false;
+         
             // below code helps to show the picbox
             Assembly myasses = Assembly.GetExecutingAssembly();
             Stream myst = myasses.GetManifestResourceStream("Russian_Roullete.Resources.spin.gif");
