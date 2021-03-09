@@ -41,11 +41,12 @@ namespace Russian_Roullete
             {
                 shotawayBullete = 5;
             }
-            else if (shotsremain > 0 && lodedgunspin != 1)
+           else if (shotsremain > 0 && lodedgunspin != 1 && chance<=2)
             {
                 shotawayBullete = 0;
-                shotsremain = shotsremain - 1;
+                shotsremain -= 1;
                 lodedgunspin = bulletechange(lodedgunspin);
+                chance--;
             }
             return shotawayBullete;
         }
